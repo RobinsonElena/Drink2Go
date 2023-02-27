@@ -1,0 +1,20 @@
+.products__list {
+  display: grid;
+  grid-template-columns: repeat(1, 280px);
+  gap: 25px;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(2, 349px);
+    gap: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(3, 317px);
+  }
+}
+
+.products__item {
+  background-color: @color-base-white;
+  border-radius: 4px;
+}

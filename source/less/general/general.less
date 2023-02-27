@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+body > * {
+  outline: 2px solid #ff1493;
+}
+
+body > * > * {
+  outline: 2px dashed #00ff00;
+  outline-offset: -2px;
+}
+
+body > * > * > * {
+  outline: 2px dotted #1e90ff;
+  outline-offset: -2px;
+}
+
+body > * > * > * > * {
+  outline: 2px dotted #ff621e;
+  outline-offset: -2px;
+}
+
+body > * > * > * > * > * {
+  outline: 2px dotted #7e0e5d;
+  outline-offset: -2px;
+}
+
+img {
+  object-fit: contain;
+  object-position: center;
+}

@@ -1,0 +1,41 @@
+.navigation-user__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @desktop-width) {
+    gap: 20px;
+  }
+}
+
+.navigation-user__link {
+  display: block;
+  padding: 20px 22px;
+  align-items: center;
+  text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    gap: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 30px 20px;
+  }
+
+  &:hover {
+    color: @color-base-primary;
+    fill: @color-base-primary;
+  }
+
+  &:active {
+    background-color: @color-base-secondary;
+  }
+}
+
+.navigation-user__text {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}

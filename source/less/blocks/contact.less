@@ -1,0 +1,35 @@
+.contact__title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  margin: 0 0 20px;
+  color: @color-base-primary;
+}
+
+.contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-style: normal;
+}
+
+.contact__address,
+.contact__phone {
+  display: flex;
+  color: @color-base-black;
+  text-decoration: none;
+  width: 261px;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 315px;
+  }
+}
+
+.contact__icon {
+  margin-right: 8px;
+}

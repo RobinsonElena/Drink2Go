@@ -1,0 +1,153 @@
+.main-nav {
+  position: absolute;
+  width: auto;
+  display: flex;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    min-height: auto;
+    padding-left: 7px;
+  }
+}
+
+.main-nav__toggle {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  background-color: @color-base-white;
+  cursor: pointer;
+  border: none;
+  margin: 0 -20px 0 0;
+
+  &:active {
+    background-color: @color-base-secondary;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  display: block;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("../../img/opened.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("../../img/closed.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+  }
+}
+
+.main-nav--closed .main-nav__list {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+  @media (max-width: @mobile-width-only) {
+    display: block;
+  }
+}
+
+.main-nav__list {
+  width: 100vw;
+  background-color: @color-base-white;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-transform: uppercase;
+    gap: 20px;
+  }
+}
+
+.main-nav__link {
+  position: relative;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px 20px;
+
+    &--current {
+      position: relative;
+      color: @color-base-primary;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    text-transform: uppercase;
+  }
+
+  &:hover,
+  &:focus {
+    color: @color-base-primary;
+  }
+
+  &:active {
+    background-color: @color-base-secondary;
+  }
+}
+
+.main-nav__link--current::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: @color-base-primary;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.main-nav__item {
+  text-align: center;
+}
+
+.main-nav__text {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
