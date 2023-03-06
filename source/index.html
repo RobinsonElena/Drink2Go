@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="">
-    <link rel="preload" href="fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Montserrat-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Montserrat-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/favicon180.png">
@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <header class="main-header main-nav--closed main-nav--nojs">
+    <header class="main-header main-header--closed main-header--nojs">
       <div class="main-header__container">
         <div class="main-header__logo">
           <a class="main-header__logo-link" href="#">
@@ -66,7 +66,7 @@
             </li>
           </ul>
         </nav>
-        <button class="main-nav__toggle" type="button">
+        <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
@@ -82,6 +82,9 @@
               <div class="new-product new-product--product1">
                 <div class="new-product__wrapper">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/new-product1-desctop.webp 1x, img/catalog/new-product1-desctop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/new-product1-tablet.webp 1x, img//catalog/new-product1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/new-product1-mobile.webp 1x, img/catalog/new-product1-mobile@2x.webp 2x">
                     <source media="(min-width: 1440px)" srcset="img/catalog/new-product1-desctop.png 1x, img/catalog/new-product1-desctop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/catalog/new-product1-tablet.png 1x, img/catalog/new-product1-tablet@2x.png 2x">
                     <img class="new-product__image" src="img/catalog/new-product1-mobile.png" width="280" height="280" srcset="img/catalog/new-product1-mobile@2x.png 2x" alt="Декаф Флэт Уайт.">
@@ -90,11 +93,11 @@
                 <div class="new-product__content">
                   <p class="new-product__unit">Новинка!</p>
                   <h3 class="new-product__title">Декаф Флэт Уайт</h3>
-                  <p class="new-product__description">Свежесваренный кофе без кофеина из Эфиопии&nbsp;с натуральным фермерским молоком — то, что нужно для&nbspрасслабления после тяжёлого рабочего дня</p>
+                  <p class="new-product__description">Свежесваренный кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком — то, что нужно для&nbsp;расслабления после тяжёлого рабочего дня</p>
                   <div class="new-product__order-box">
                     <del class="new-product__price-old">295₽</del>
                     <span class="new-product__price">225₽</span>
-                    <button class="new-product__button button" type="button">Заказать</button>
+                    <a class="new-product__button button" href="#">Заказать</a>
                   </div>
                 </div>
               </div>
@@ -103,6 +106,9 @@
               <div class="new-product new-product--product2">
                 <div class="new-product__wrapper">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/new-product2-desctop.webp 1x, img/catalog/new-product2-desctop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/new-product2-tablet.webp 1x, img//catalog/new-product2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/new-product2-mobile.webp 1x, img/catalog/new-product2-mobile@2x.webp 2x">
                     <source media="(min-width: 1440px)" srcset="img/catalog/new-product2-desctop.png 1x, img/catalog/new-product2-desctop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/catalog/new-product2-tablet.png 1x, img/catalog/new-product2-tablet@2x.png 2x">
                     <img class="new-product__image" src="img/catalog/new-product2-mobile.png" width="280" height="280" srcset="img/catalog/new-product2-mobile@2x.png 2x" alt="Декаф Флэт Уайт.">
@@ -111,11 +117,11 @@
                 <div class="new-product__content">
                   <p class="new-product__unit">Новинка!</p>
                   <h3 class="new-product__title">Лавандовый Латте</h3>
-                  <p class="new-product__description">Невероятное сочетание перуанскойb&nbsp;высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                  <p class="new-product__description">Невероятное сочетание перуанской&nbsp;высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
                   <div class="new-product__order-box">
                     <del class="new-product__price-old">285₽</del>
                     <span class="new-product__price">265₽</span>
-                    <button class="new-product__button button" type="button">Заказать</button>
+                    <a class="new-product__button button" href="#">Заказать</a>
                   </div>
                 </div>
               </div>
@@ -124,6 +130,9 @@
               <div class="new-product new-product--product3">
                 <div class="new-product__wrapper">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/new-product3-desctop.webp 1x, img/catalog/new-product3-desctop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/new-product3-tablet.webp 1x, img//catalog/new-product3-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/new-product3-mobile.webp 1x, img/catalog/new-product3-mobile@2x.webp 2x">
                     <source media="(min-width: 1440px)" srcset="img/catalog/new-product3-desctop.png 1x, img/catalog/new-product3-desctop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/catalog/new-product3-tablet.png 1x, img/catalog/new-product3-tablet@2x.png 2x">
                     <img class="new-product__image" src="img/catalog/new-product3-mobile.png" width="280" height="280" srcset="img/catalog/new-product3-mobile@2x.png 2x" alt="Декаф Флэт Уайт.">
@@ -132,11 +141,11 @@
                 <div class="new-product__content">
                   <p class="new-product__unit">Новинка!</p>
                   <h3 class="new-product__title">Тройной Эспрессо</h3>
-                  <p class="new-product__description">Мощнее укола адреналина, чернееb&nbsp;самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                  <p class="new-product__description">Мощнее укола адреналина, чернее&nbsp;самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
                   <div class="new-product__order-box">
                     <del class="new-product__price-old">395₽</del>
                     <span class="new-product__price">375₽</span>
-                    <button class="new-product__button button" type="button">Заказать</button>
+                    <a class="new-product__button button" href="#">Заказать</a>
                   </div>
                 </div>
               </div>
@@ -162,7 +171,7 @@
           <li class="advantages__item advantages__item--comfort">
             <div class="advantages__box">
               <h3 class="advantages__subtitle">Удобство</h3>
-              <p class="advantages__description">Легко помещается и в карман, и&nbsp;в маленькую сумочку</p>
+              <p class="advantages__description">Легко помещается и в карман, и&nbsp;в&nbsp;маленькую сумочку</p>
             </div>
           </li>
           <li class="advantages__item advantages__item--energy">
@@ -201,9 +210,11 @@
                     </div>
                   </div>
                   <div class="range__wrapper-inputs">
-                    <input class="range__input" type="number" value="0" name="min-price">
+                    <label class="visually-hidden" for="min-price">Минимальная цена</label>
+                    <input class="range__input" type="number" value="0" name="min-price" id="min-price">
                     <span class="range__dash"></span>
-                    <input class="range__input range__input--max" type="number" value="900" name="max-price">
+                    <label class="visually-hidden" for="max-price">Максимальная цена</label>
+                    <input class="range__input range__input--max" type="number" value="900" name="max-price" id="max-price">
                   </div>
                 </div>
               </fieldset>
@@ -301,14 +312,16 @@
                 <div class="products__product-card product-card">
                   <a class="product-card__link" href="#">
                     <picture>
-                      <img class="product__image" src="img/catalog/product1.png" width="130" height="188" srcset="img/catalog/product1@2x.png 2x" alt="Декаф Флэт Уайт.">
+                      <source type="image/webp" srcset="img/catalog/product1.webp 1x, img/catalog/product1@2x.webp 2x">
+                      <source srcset="img/catalog/product1.png 1x, img/catalog/product1@2x.png 2x">
+                      <img class="product-card__image" src="img/catalog/product1.png" width="130" height="188" srcset="img/catalog/product1@2x.png 2x" alt="Декаф Флэт Уайт.">
                     </picture>
                     <h3 class="product-card__title">Декаф Флэт Уайт</h3>
                   </a>
                   <p class="product-card__description">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
                   <div class="product-card__order-box">
                     <span class="product-card__price">225₽</span>
-                    <button class="product-card__button button" type="button">В корзину</button>
+                    <a class="product-card__button button" href="#">В корзину</a>
                   </div>
                 </div>
               </li>
@@ -316,14 +329,16 @@
                 <div class="products__product-card product-card">
                   <a class="product-card__link" href="#">
                     <picture>
-                      <img class="product__image" src="img/catalog/product2.png" width="130" height="188" srcset="img/catalog/product2@2x.png 2x" alt="Декаф Флэт Уайт.">
+                      <source type="image/webp" srcset="img/catalog/product2.webp 1x, img/catalog/product2@2x.webp 2x">
+                      <source srcset="img/catalog/product2.png 1x, img/catalog/product2@2x.png 2x">
+                      <img class="product-card__image" src="img/catalog/product2.png" width="130" height="188" srcset="img/catalog/product2@2x.png 2x" alt="Декаф Флэт Уайт.">
                     </picture>
                     <h3 class="product-card__title">Декаф Флэт Уайт</h3>
                   </a>
-                  <p class="product-card__description">Кофе без кофеина из Эфиопии сс&nbsp;натуральным фермерским молоком</p>
+                  <p class="product-card__description">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
                   <div class="product-card__order-box">
                     <span class="product-card__price">225₽</span>
-                    <button class="product-card__button button" type="button">В корзину</button>
+                    <a class="product-card__button button" href="#">В корзину</a>
                   </div>
                 </div>
               </li>
@@ -331,14 +346,16 @@
                 <div class="products__product-card product-card">
                   <a class="product-card__link" href="#">
                     <picture>
-                      <img class="product__image" src="img/catalog/product3.png" width="130" height="188" srcset="img/catalog/product3@2x.png 2x" alt="Декаф Флэт Уайт.">
+                      <source type="image/webp" srcset="img/catalog/product3.webp 1x, img/catalog/product3@2x.webp 2x">
+                      <source srcset="img/catalog/product3.png 1x, img/catalog/product3@2x.png 2x">
+                      <img class="product-card__image" src="img/catalog/product3.png" width="130" height="188" srcset="img/catalog/product3@2x.png 2x" alt="Декаф Флэт Уайт.">
                     </picture>
                     <h3 class="product-card__title">Декаф Флэт Уайт</h3>
                   </a>
-                  <p class="product-card__description">Кофе без кофеина из Эфиопии сс&nbsp;натуральным фермерским молоком</p>
+                  <p class="product-card__description">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
                   <div class="product-card__order-box">
                     <span class="product-card__price">225₽</span>
-                    <button class="product-card__button button" type="button">В корзину</button>
+                    <a class="product-card__button button" href="#">В корзину</a>
                   </div>
                 </div>
               </li>
@@ -346,14 +363,16 @@
                 <div class="products__product-card product-card">
                   <a class="product-card__link" href="#">
                     <picture>
+                      <source type="image/webp" srcset="img/catalog/product4.webp 1x, img/catalog/product4@2x.webp 2x">
+                      <source srcset="img/catalog/product4.png 1x, img/catalog/product4@2x.png 2x">
                       <img class="product__image" src="img/catalog/product4.png" width="130" height="188" srcset="img/catalog/product4@2x.png 2x" alt="Декаф Флэт Уайт.">
                     </picture>
                     <h3 class="product-card__title">Декаф Флэт Уайт</h3>
                   </a>
-                  <p class="product-card__description">Кофе без кофеина из Эфиопии сс&nbsp;натуральным фермерским молоком</p>
+                  <p class="product-card__description">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
                   <div class="product-card__order-box">
                     <span class="product-card__price">225₽</span>
-                    <button class="product-card__button button" type="button">В корзину</button>
+                    <a class="product-card__button button" href="#">В корзину</a>
                   </div>
                 </div>
               </li>
@@ -361,14 +380,16 @@
                 <div class="products__product-card product-card">
                   <a class="product-card__link" href="#">
                     <picture>
-                      <img class="product__image" src="img/catalog/product5.png" width="130" height="188" srcset="img/catalog/product5@2x.png 2x" alt="Декаф Флэт Уайт.">
+                      <source type="image/webp" srcset="img/catalog/product5.webp 1x, img/catalog/product5@2x.webp 2x">
+                      <source srcset="img/catalog/product5.png 1x, img/catalog/product5@2x.png 2x">
+                      <img class="product-card__image" src="img/catalog/product5.png" width="130" height="188" srcset="img/catalog/product5@2x.png 2x" alt="Декаф Флэт Уайт.">
                     </picture>
                     <h3 class="product-card__title">Декаф Флэт Уайт</h3>
                   </a>
-                  <p class="product-card__description">Кофе без кофеина из Эфиопии сс&nbsp;натуральным фермерским молоком</p>
+                  <p class="product-card__description">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
                   <div class="product-card__order-box">
                     <span class="product-card__price">225₽</span>
-                    <button class="product-card__button button" type="button">В корзину</button>
+                    <a class="product-card__button button" href="#">В корзину</a>
                   </div>
                 </div>
               </li>
@@ -376,14 +397,16 @@
                 <div class="products__product-card product-card">
                   <a class="product-card__link" href="#">
                     <picture>
-                      <img class="product__image" src="img/catalog/product6.png" width="130" height="188" srcset="img/catalog/product6@2x.png 2x" alt="Декаф Флэт Уайт.">
+                      <source type="image/webp" srcset="img/catalog/product6.webp 1x, img/catalog/product6@2x.webp 2x">
+                      <source srcset="img/catalog/product6.png 1x, img/catalog/product6@2x.png 2x">
+                      <img class="product-card__image" src="img/catalog/product6.png" width="130" height="188" srcset="img/catalog/product6@2x.png 2x" alt="Декаф Флэт Уайт.">
                     </picture>
                     <h3 class="product-card__title">Декаф Флэт Уайт</h3>
                   </a>
-                  <p class="product-card__description">Кофе без кофеина из Эфиопии сс&nbsp;натуральным фермерским молоком</p>
+                  <p class="product-card__description">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
                   <div class="product-card__order-box">
                     <span class="product-card__price">225₽</span>
-                    <button class="product-card__button button" type="button">В корзину</button>
+                    <a class="product-card__button button" href="#">В корзину</a>
                   </div>
                 </div>
               </li>
@@ -434,7 +457,7 @@
           <a class="main-footer__logo-link" href="#">
             <picture>
               <source media="(min-width: 768px)" srcset="img/logo/logo-full.svg" width="170" height="36">
-              <img class="main-foter__logo-image" src="img/logo/logo-middle.svg" width="82" height="36" alt="Логотип.">
+              <img class="main-footer__logo-image" src="img/logo/logo-middle.svg" width="82" height="36" alt="Логотип.">
             </picture>
             <span class="main-footer__logo-text">Интернет-магазин кофейных напитков</span>
           </a>
@@ -446,7 +469,7 @@
                   <svg class="social__icon" width="20" height="20" viewBox="0 0 20 20">
                     <use href="img/sprite.svg#vk"></use>
                   </svg>
-                  <span class="visually-hidden">Мы В контактах</span>
+                  <span class="visually-hidden">Мы в контактах</span>
                 </a>
               </li>
               <li class="social__item">

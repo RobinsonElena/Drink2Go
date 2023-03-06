@@ -21,6 +21,9 @@ export const styles = () => {
     .pipe(less())
     .pipe(postcss([
       autoprefixer(),
+    ]))
+    .pipe(gulp.dest('build/css'))
+    .pipe(postcss([
       csso()
     ]))
     .pipe(rename('style.min.css'))

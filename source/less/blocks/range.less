@@ -97,6 +97,7 @@
   padding: 6px 10px;
   border: 2px solid @color-primary-lighter;
   border-radius: 4px;
+  appearance: none;
 
   @media (min-width: @tablet-width) {
     width: 93px;
@@ -138,4 +139,17 @@
     width: 10px;
     margin: 0 19px;
   }
+}
+
+/* stylelint-disable */
+.range__input::-webkit-outer-spin-button,
+.range__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.range__input,
+.range__input:hover,
+.range__input:focus {
+  appearance: none;
+  -moz-appearance: textfield;
 }
