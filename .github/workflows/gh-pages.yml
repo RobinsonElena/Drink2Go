@@ -11,14 +11,14 @@ jobs:
     
     steps:
       - name: Check Out
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3.2.0
         with:
           persist-credentials: false
 
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: '14.x'
+          node-version: '16.x'
 
       - name: Installing Dependencies
         run: npm ci
