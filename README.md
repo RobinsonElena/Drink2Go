@@ -2,4 +2,4 @@
 
 Количество затраченных часов - 59
 
-<a align="center" href="https://robinsonelena.github.io/Drink2Go/"</a>
+<a align="center" href="https://robinsonelena.github.io/Drink2Go/">Нажмите здесь!</a>
